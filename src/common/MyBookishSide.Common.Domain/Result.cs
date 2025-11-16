@@ -39,7 +39,9 @@ public class Result
 
 public class Result<T> : Result
 {
+#pragma warning disable IDE0032
     private readonly T? _value;
+#pragma warning restore IDE0032
 
     public T? Value => IsSuccess
         ? _value
